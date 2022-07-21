@@ -1601,6 +1601,18 @@ input::-moz-focus-inner {
   z-index: 100;
 }
 
+@media (max-width: 900){
+  .s-header {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 900%;
+    height: 78px;
+    text-align: center;
+    z-index: 100;
+  }
+}
+
 .s-header.sticky {
   background-color: #728396;
   position: fixed;
