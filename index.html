@@ -30,14 +30,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/logo.png">
     <link rel="manifest" href="site.webmanifest">
+    
 
 </head>
 
 <body id="top">
-
-    <div id="preloader">
-        <div id="loader"></div>
-    </div>
 
     <!-- site header
     ================================================== -->
@@ -45,7 +42,7 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="./images/logo.png" height="20" width="10" alt="Homepage">
+                <img src="./images/logo.png" height="4" width="4" alt="Homepage">
             </a>
         </div>
 
@@ -78,7 +75,7 @@
         <div class="row intro-content">
 
             <div class="column large-9 mob-full intro-text">
-                <h3>Hello, I'm Darlington Okorie</h3>
+                <h3 id="typewriter"></h3>
                 <h1>
                     Web Developer, <br>
                     Storyteller, <br>
@@ -364,7 +361,60 @@
 
     </section> <!-- end s-cta -->
 
-
+    <section id="chefs" class="chefs">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>My Works <span>Works</span></h2>
+            <p>Some jobs I have done.</p>
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="./images/diana.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Diana Bounty</h4>
+                  <span>Ecommerce for women fitness products</span>
+                  <div class="social">
+                    <a href="https://cretechnology.com.ng" class="btn btn-primary">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="./images/cretechnology.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>CreTechnologies</h4>
+                  <span>Web Design and Content for engineering firm</span>
+                  <div class="social">
+                    <a href="https://cretechnology.com.ng" class="btn btn-primary">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="./images/freeschool.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>The Free School Foundation</h4>
+                  <span>Website for the free school foundation, an organization poised to give free education to people</span>
+                  <div class="social">
+                    <a href="https://thefreeschoolfoundation.org" class="btn btn-primary">Visit</a>  
+                </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Chefs Section -->
+  
     <!-- works
     ================================================== -->
     <section id="works" class="s-works target-section">
@@ -387,9 +437,9 @@
                 <div class="masonry__brick" data-aos="fade-up">
                     <div class="item-folio">
                         <div class="item-folio__thumb">
-                            <a href="images/freeschool.PNG" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                <img src="images/freeschool.PNG" 
-                                     srcset="images/freeschool.PNG 1x, im/freeschool@2x.png 2x" alt="">
+                            <a href="images/freeschool.png" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                                <img src="images/freeschool.png" 
+                                     srcset="images/freeschool.png 1x, im/freeschool@2x.png 2x" alt="">
                             </a>    
                             <a href="https://thefreeschoolfoundation.org/" class="item-folio__project-link" title="Project link" target="_blank"></a>
                         </div>
@@ -436,9 +486,9 @@
                     <div class="item-folio">
                             
                         <div class="item-folio__thumb">
-                            <a href="images/diana.PNG" class="thumb-link" title="The Beetle Car" data-size="1050x700">
-                                <img src="images/diana.PNG"
-                                     srcset="images/diana.PNG 1x, images/portfolio/the-beetle@2x.jpg 2x" alt="">
+                            <a href="images/diana.png" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                <img src="images/diana.png"
+                                     srcset="images/diana.png 1x, images/portfolio/the-beetle@2x.jpg 2x" alt="">
                             </a>
                             <a href="https://www.dianabounty.com/" class="item-folio__project-link" title="Project link" target="_blank"></a>
                         </div>
@@ -459,9 +509,9 @@
                 <div class="masonry__brick" data-aos="fade-up">
                     <div class="item-folio">
                         <div class="item-folio__thumb">
-                            <a href="images/cretechnology.PNG" class="thumb-link" title="Grow Green" data-size="1050x700">
-                                <img src="images/cretechnology.PNG" 
-                                     srcset="images/cretechnology.PNG 1x, images/por 2x" alt="">
+                            <a href="images/cretechnology.png" class="thumb-link" title="Grow Green" data-size="1050x700">
+                                <img src="images/cretechnology.png" 
+                                     srcset="images/cretechnology.png 1x, images/por 2x" alt="">
                             </a>
                             <a href="https://www.dianabounty.com.ng" class="item-folio__project-link" title="Project link" target="_blank"></a>
                         </div>
@@ -683,7 +733,21 @@
         </div>
 
     </div><!-- end photoSwipe background -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <script src='./js/core.js'></script>
+    <script type="text/javascript">
+      const instance = new Typewriter('#typewriter', {
+        strings: ['Hello,',  `I'm Darlington Okorie`],
+        autoStart: true,
+        loop: true,
+      });
+    </script>
+  
 <script>
+
     document.getElementById("myBtn").addEventListener("click", function() {
     const link = document.createElement("a");
     link.href = "./cv/Profile.pdf";
