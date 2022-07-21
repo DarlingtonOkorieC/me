@@ -1627,7 +1627,7 @@ input::-moz-focus-inner {
   display: inline-block;
   margin: -20px 0 0 0;
   padding: 0;
-  width: 50px !important;
+  width: 40px !important;
   height: 2px;
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
