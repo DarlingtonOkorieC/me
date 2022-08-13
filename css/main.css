@@ -3057,12 +3057,10 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:800px) {
   .s-works {
-    display: none;
     padding-top: 16rem;
   }
 
   .masonry-wrap {
-    display: none;
     margin-top: 7.2rem;
   }
 
