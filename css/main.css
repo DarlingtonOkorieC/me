@@ -3097,7 +3097,6 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:600px) {
   .masonry-wrap {
-    display: none;
     width: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -3127,8 +3126,8 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:500px) {
   .masonry__brick {
-    /* margin-bottom: 3.6rem; */
-    display: none;
+     margin-bottom: 3.6rem; 
+
   }
 
 }
